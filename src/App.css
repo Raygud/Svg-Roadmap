@@ -184,7 +184,6 @@
 }
 
 .cls-4 {
-  stroke: lime;
   stroke-dasharray: 1655;
   stroke-dashoffset: -1655;
   stroke-width: 9px;
@@ -210,6 +209,15 @@
 
 .buttonShow {
   display: block;
+}
+
+.required {
+  stroke: red;
+}
+
+.access {
+  stroke: rgb(0, 255, 0);
+
 }
 
 

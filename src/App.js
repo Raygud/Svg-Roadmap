@@ -9,17 +9,16 @@ function App() {
   const [buttonClicked, setButtonClicked] = useState()
 
 
-  const onButtonClick = (X) => {
-    setButtonClicked(X)
+  const onButtonClick = (Path) => {
+    setButtonClicked(Path)
     let Pathlist = document.querySelectorAll(".cls-4");
-    console.log(X)
+    console.log(Path)
     console.log(Pathlist)
     Pathlist.forEach((PathItem) => {
       console.log(PathItem.getAttribute("OffSet"))
       
-      if (PathItem.getAttribute('value') == X){
+      if (PathItem.getAttribute('value') == Path){
         PathItem.style.strokeDashoffset = 0 
-        PathItem.style.stroke = "yellowgreen"
       }
       else{
         PathItem.style.strokeDashoffset = parseInt(PathItem.getAttribute("OffSet"))
@@ -43,55 +42,58 @@ function App() {
   <text class="cls-13" transform="translate(868.62 516.51)"><tspan class="cls-15" x="0" y="0">Professionsbachelor</tspan></text>
   <text class="cls-13" transform="translate(1201.62 516.51)"><tspan x="0" y="0">Universitet</tspan></text>
   <g id="Eudx">
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,430.45h881c13.81,0,25-11.19,25-25v-85"/>
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,430.45H820c13.81,0,32-11.19,32-25v-85"/>
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,430.45H820c13.81,0,32,11.19,32,25v103"/>
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,427.45h201c13.81,0,32-11.19,32-25v-103"/>
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,430.45h201c13.81,0,32,11.19,32,25v103"/>
-    <path class="cls-4 cls-Eudx" value="PathFromEudx" OffSet="1075" d="M288,431.45h881c13.81,0,25,11.19,25,25v85"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,430.45h881c13.81,0,25-11.19,25-25v-85"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,430.45H820c13.81,0,32-11.19,32-25v-85"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,430.45H820c13.81,0,32,11.19,32,25v103"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,427.45h201c13.81,0,32-11.19,32-25v-103"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,430.45h201c13.81,0,32,11.19,32,25v103"/>
+    <path class="cls-4 cls-Eudx access" value="PathFromEudx" OffSet="1075" d="M288,431.45h881c13.81,0,25,11.19,25,25v85"/>
+    <path class="cls-4 cls-Eudx required" value="PathFromEudx" OffSet="1075" d="M33,550.45H183.85c13.81,0,25-11.19,25-25v-70c0-13.81,11.19-25,25-25h54.46"/>
   </g>
   <g id="GrundSkole">
-    <path id="GrundMaritime" value="PathFromGrund" OffSet="-1555"  class="cls-4" d="M521,293.45v-74.77c0-13.38-10.85-24.23-24.23-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
-    <path id="GrundPolitiForsvar" value="PathFromGrund" OffSet="-1555"  class="cls-4" d="M852,293.45v-74.77c0-13.38-18.62-24.23-32-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
-    <path id="GrundKunstneriske" value="PathFromGrund" OffSet="-1555"  class="cls-4" d="M1194,293.45v-74.77c0-13.38-18.62-24.23-32-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
-    <path id="GrundEudx" value="PathFromGrund" OffSet="-1555"  class="cls-4" d="M261,430.45h-28c-13.79,0-25,13.18-25,26.96v66.88c0,13.89-11.26,25.15-25.15,25.15H61"/>
-    <path id="GrundGym" value="PathFromGrund" OffSet="-1555"  class="cls-4" d="M261,667.45h-28.04c-13.79,0-24.96-11.18-24.96-24.96v-66.88c0-13.89-11.26-25.15-25.15-25.15H61"/>
+    <path id="GrundMaritime" value="PathFromGrund" OffSet="-1555"  class="cls-4 access" d="M521,293.45v-74.77c0-13.38-10.85-24.23-24.23-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
+    <path id="GrundPolitiForsvar" value="PathFromGrund" OffSet="-1555"  class="cls-4 access" d="M852,293.45v-74.77c0-13.38-18.62-24.23-32-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
+    <path id="GrundKunstneriske" value="PathFromGrund" OffSet="-1555"  class="cls-4 access" d="M1194,293.45v-74.77c0-13.38-18.62-24.23-32-24.23H232.23c-13.38,0-24.23,10.85-24.23,24.23v306.67c0,13.38-10.85,24.23-24.23,24.23l-118.77,.87"/>
+    <path id="GrundEudx" value="PathFromGrund" OffSet="-1555"  class="cls-4 access" d="M261,430.45h-28c-13.79,0-25,13.18-25,26.96v66.88c0,13.89-11.26,25.15-25.15,25.15H61"/>
+    <path id="GrundGym" value="PathFromGrund" OffSet="-1555"  class="cls-4 access" d="M261,667.45h-28.04c-13.79,0-24.96-11.18-24.96-24.96v-66.88c0-13.89-11.26-25.15-25.15-25.15H61"/>
   </g>
   <g id="Gymn">
-    <path id="GymKunst"  value="PathFromGym" OffSet="-1555" class="cls-4" d="M1194,320.07v85.31c0,13.85-18.15,25.08-32,25.08H411.22c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
-    <path id="GymPolitiForsvar" value="PathFromGym" OffSet="-1555" class="cls-4" d="M852,320.07v85.31c0,13.85-18.15,25.08-32,25.08H411.22c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
-    <path id="GymMaritime" value="PathFromGym" OffSet="-1555" class="cls-4" d="M521,320.07v85.31c0,13.85-18.15,25.08-32,25.08h-77.78c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
-    <path id="GymUniversitet" value="PathFromGym" OffSet="-1555" class="cls-4" d="M1194,558.18v84.58c0,13.81-18.19,25-32,25H288.31"/>
-    <path id="GymProfessionsbachelor" value="PathFromGym" OffSet="-1555" class="cls-4" d="M852,558.18v84.58c0,13.81-18.19,25-32,25H288.31"/>
-    <path id="GymErhvervsakademi" value="PathFromGym" OffSet="-1555" class="cls-4" d="M522,558.18l-1,84.58c0,13.81-18.19,25-32,25h-200.69"/>
+    <path id="GymKunst"  value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M1194,320.07v85.31c0,13.85-18.15,25.08-32,25.08H411.22c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
+    <path id="GymPolitiForsvar" value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M852,320.07v85.31c0,13.85-18.15,25.08-32,25.08H411.22c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
+    <path id="GymMaritime" value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M521,320.07v85.31c0,13.85-18.15,25.08-32,25.08h-77.78c-3.43,0-6.22,2.78-6.22,6.22v225.77c0,3.31-2.7,5.98-6.01,5.94l-78.99-.93"/>
+    <path id="GymUniversitet" value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M1194,558.18v84.58c0,13.81-18.19,25-32,25H288.31"/>
+    <path id="GymProfessionsbachelor" value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M852,558.18v84.58c0,13.81-18.19,25-32,25H288.31"/>
+    <path id="GymErhvervsakademi" value="PathFromGym" OffSet="-1555" class="cls-4 access" d="M522,558.18l-1,84.58c0,13.81-18.19,25-32,25h-200.69"/>
+    <path value="PathFromGym" OffSet="-1555" class="cls-4 required" d="M33,550.45H183c13.81,0,25,11.19,25,25v67c0,13.81,11.19,25,25,25h55.31"/>
   </g>
   <g id="FromErhvervs">
-    <path value="PathFromErhvervs" OffSet="-1555" class="cls-4" d="M521.42,558.18v84.27c0,13.81-11.19,25-25,25h-208.12"/>
-    <path value="PathFromErhvervs" OffSet="-1555" class="cls-4" d="M521.42,558.18v84.27c0,13.81-11.19,25-25,25h-90.92v-237h-117.19"/>
+    <path value="PathFromErhvervs" OffSet="-1555" class="cls-4 required" d="M521.42,558.18v84.27c0,13.81-11.19,25-25,25h-208.12"/>
+    <path value="PathFromErhvervs" OffSet="-1555" class="cls-4 required" d="M521.42,558.18v84.27c0,13.81-11.19,25-25,25h-90.92v-237h-117.19"/>
+    <path value="PathFromErhvervs" OffSet="-1555" class="cls-4 access" d="M521.42,558.18v84.27c0,13.81,11.19,25,25,25h281c13.81,0,25-11.19,25-25v-84.27"/>
   </g>
   <g id="FromProfessions">
-    <path value="PathFromProfessions" OffSet="-1555" class="cls-4" d="M852.42,558.18v84.58c0,13.81-11.19,25-25,25H288.31"/>
-    <path value="PathFromProfessions" OffSet="-1555" class="cls-4" d="M852.42,558.18v84.58c0,13.81-11.19,25-25,25H404.5v-237h-116.19"/>
-    <path value="PathFromProfessions" OffSet="-1555" class="cls-4" d="M521.42,558.18v84.27c0,13.81,11.19,25,25,25h280.58c13.81,0,25-11.19,25-25v-84.27"/>
+    <path value="PathFromProfessions" OffSet="-1555" class="cls-4 required" d="M852.42,558.18v84.58c0,13.81-11.19,25-25,25H288.31"/>
+    <path value="PathFromProfessions" OffSet="-1555" class="cls-4 required" d="M852.42,558.18v84.58c0,13.81-11.19,25-25,25H404.5v-237h-116.19"/>
+    <path value="PathFromProfessions" OffSet="-1555" class="cls-4 required" d="M521.42,558.18v84.27c0,13.81,11.19,25,25,25h280.58c13.81,0,25-11.19,25-25v-84.27"/>
   </g>
   <g id="FromUni">
-    <path value="PathFromUni" OffSet="-1655" class="cls-4" d="M288.31,667.76h881.12c13.81,0,25-11.19,25-25v-84.58"/>
-    <path value="PathFromUni" OffSet="-1655" class="cls-4" d="M1194.5,558.45v84.5c0,13.81-11.19,25-25,25H405v-238l-116.69,1"/>
+    <path value="PathFromUni" OffSet="-1655" class="cls-4 required" d="M288.31,667.76h881.12c13.81,0,25-11.19,25-25v-84.58"/>
+    <path value="PathFromUni" OffSet="-1655" class="cls-4 required" d="M1194.5,558.45v84.5c0,13.81-11.19,25-25,25H405v-238l-116.69,1"/>
   </g>
   <g id="FromMaritime">
-    <path value="PathFromMaritime" OffSet="-1555" class="cls-4" d="M521.46,320.07v85.69c0,13.81-11.19,25-25,25h-208.15"/>
-    <path value="PathFromMaritime" OffSet="-1555" class="cls-4" d="M521.46,320.07v85.73c0,13.79-11.17,24.98-24.96,25l-91,.15v236.81h-117.19"/>
-    <path value="PathFromMaritime" OffSet="-1555" class="cls-4" d="M521.46,320.07v-125.62H233c-13.81,0-25,11.19-25,25v305.13c0,13.81-11.19,25-25,25H33"/>
+    <path value="PathFromMaritime" OffSet="-1555" class="cls-4 required" d="M521.46,320.07v85.69c0,13.81-11.19,25-25,25h-208.15"/>
+    <path value="PathFromMaritime" OffSet="-1555" class="cls-4 required" d="M521.46,320.07v85.73c0,13.79-11.17,24.98-24.96,25l-91,.15v236.81h-117.19"/>
+    <path value="PathFromMaritime" OffSet="-1555" class="cls-4 required" d="M521.46,320.07v-125.62H233c-13.81,0-25,11.19-25,25v305.13c0,13.81-11.19,25-25,25H33"/>
   </g>
   <g id="FromPolitiForsvar">
-    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4" d="M852.46,320.07v85.88c0,13.81-11.19,25-25,25H405.5v236.81h-117.19"/>
-    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4" d="M852.46,320.07v85.69c0,13.81-11.19,25-25,25H288.31"/>
-    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4" d="M852.46,320.07v-100.62c0-13.81-11.19-25-25-25H233c-13.81,0-25,11.19-25,25v306c0,13.81-11.19,25-25,25H33"/>
+    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4 required" d="M852.46,320.07v85.88c0,13.81-11.19,25-25,25H405.5v236.81h-117.19"/>
+    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4 required" d="M852.46,320.07v85.69c0,13.81-11.19,25-25,25H288.31"/>
+    <path value="PathFromPolitiForsvar" OffSet="-1555" class="cls-4 required" d="M852.46,320.07v-100.62c0-13.81-11.19-25-25-25H233c-13.81,0-25,11.19-25,25v306c0,13.81-11.19,25-25,25H33"/>
   </g>
   <g id="FromKunst">
-    <path value="PathFromKunst" OffSet="-1655" class="cls-4" d="M1194.46,320.07v85.38c0,13.81-11.19,25-25,25H405.5v237.31h-117.19"/>
-    <path value="PathFromKunst" OffSet="-1655" class="cls-4" d="M1194.46,320.07v85.88c0,13.81-11.19,25-25,25H288.31"/>
-    <path value="PathFromKunst" OffSet="-1655" class="cls-4" d="M1194.46,320.07v-100.62c0-13.81-11.19-25-25-25H233.5c-13.81,0-25,11.19-25,25v305.13c0,13.81-11.19,25-25,25H33"/>
+    <path value="PathFromKunst" OffSet="-1655" class="cls-4 required" d="M1194.46,320.07v85.38c0,13.81-11.19,25-25,25H405.5v237.31h-117.19"/>
+    <path value="PathFromKunst" OffSet="-1655" class="cls-4 required" d="M1194.46,320.07v85.88c0,13.81-11.19,25-25,25H288.31"/>
+    <path value="PathFromKunst" OffSet="-1655" class="cls-4 required" d="M1194.46,320.07v-100.62c0-13.81-11.19-25-25-25H233.5c-13.81,0-25,11.19-25,25v305.13c0,13.81-11.19,25-25,25H33"/>
   </g>
   <g>
     <g onClick={() => onButtonClick('PathFromPolitiForsvar')}>
@@ -205,4 +207,3 @@ function App() {
 }
 
 export default App;
-
